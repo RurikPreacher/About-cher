@@ -1,4 +1,4 @@
-#wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -22,15 +22,27 @@ h1 {
     min-width: 700px;
 }
 
-.box-1 {
+.box_images {
     min-width: 400px;
     margin-right: 10px;
 }
 
-.text-1>p {
+.text>p {
     margin-top: 0px;
 }
 
 .container:nth-child(4) {
     border-bottom: 0px solid;
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
 }
